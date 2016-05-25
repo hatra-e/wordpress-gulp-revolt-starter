@@ -10,7 +10,7 @@ if ( ! function_exists( 'rvn_register_sidebars' ) ) :
      * Register sidebars
      *
      * @wp-hook widgets_init
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_register_sidebars()
     {

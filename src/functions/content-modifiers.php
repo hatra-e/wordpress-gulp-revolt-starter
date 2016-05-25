@@ -14,7 +14,7 @@ if ( ! function_exists( 'rvn_modify_excerpt_length' ) ) :
      * @wp-hook excerpt_length
      * @param int $length Excerpt length.
      * @return int Modified excerpt length.
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_modify_excerpt_length( $length )
     {
@@ -35,7 +35,7 @@ if ( ! function_exists( 'rvn_modify_excerpt' ) ) :
      * @wp-hook wp_trim_excerpt
      * @param string $excerpt
      * @return string Modified excerpt.
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_modify_excerpt( $excerpt )
     {
@@ -57,7 +57,7 @@ if ( ! function_exists('rvn_remove_first_gallery_shortcode' ) ) :
      * @wp-hook the_content
      * @param string $content Post content.
      * @return string Modifed $content.
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_remove_first_gallery_shortcode( $content )
     {
@@ -85,7 +85,7 @@ if ( ! function_exists( 'rvn_modify_gallery_atts' ) ):
      * @wp-hook shortcode_atts_gallery
      * @param array $atts
      * @return array Modified $atts.
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_modify_gallery_atts( $atts )
     {

@@ -10,7 +10,7 @@ if ( ! function_exists( 'rvn_add_post_formats_metaboxes' ) ) :
      * Register post formats meta boxes and fields.
      *
      * @wp-hook cmb2_admin_init
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_add_post_formats_metaboxes()
     {

@@ -11,7 +11,7 @@ if ( ! function_exists( 'rvn_enqueue_customizer_scripts' ) ) :
      * E.g. to enhance controls.
      *
      * @wp-hook customize_controls_print_footer_scripts
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_enqueue_customizer_scripts()
     {
@@ -36,7 +36,7 @@ if ( ! function_exists( 'rvn_enqueue_customizer_styles' ) ) :
      * Enqueues styles for the customizer itself.
      *
      * @wp-hook customize_controls_print_footer_scripts
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_enqueue_customizer_styles()
     {
@@ -63,7 +63,7 @@ if ( ! function_exists( 'rvn_enqueue_customizer_preview_scripts' ) ) :
      * adjusted.
      *
      * @wp-hook customize_preview_init
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_enqueue_customizer_preview_scripts()
     {

@@ -10,7 +10,7 @@ if ( ! function_exists( 'rvn_register_portfolio_post_type' ) ) :
      * Register portfolio post type
      *
      * @wp-hook init
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_register_portfolio_post_type()
     {
@@ -67,7 +67,7 @@ if ( ! function_exists( 'rvn_register_portfolio_taxonomy' ) ) :
      * Register portfolio taxonomy
      *
      * @wp-hook init
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_register_portfolio_taxonomy()
     {

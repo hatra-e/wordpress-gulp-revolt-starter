@@ -9,7 +9,7 @@ if ( ! function_exists( 'rvn_put_paginator' ) ) :
     /**
      * Paginator
      *
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_put_paginator()
     {

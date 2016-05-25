@@ -12,7 +12,7 @@ if ( ! class_exists( 'RVN_Customizer_Controls_Interface' ) ) :
     /**
      * Helper class for the customizer controls.
      *
-     * @since 1.0
+     * @since 1.0.0
      */
     class RVN_Customizer_Controls_Interface
     {
@@ -43,9 +43,9 @@ if ( ! class_exists( 'RVN_Customizer_Controls_Interface' ) ) :
         /**
          * Returns an increasing priority number.
          *
-         * @param  int $step The number by which the priority increments
+         * @param int $step The number by which the priority increments
          * @return int
-         * @since  1.0
+         * @since 1.0.0
          */
         public static function priority( $step = 10 )
         {
@@ -59,7 +59,7 @@ if ( ! class_exists( 'RVN_Customizer_Controls_Interface' ) ) :
          * Adds a customizer panel.
          *
          * @param array $args
-         * @since 1.0
+         * @since 1.0.0
          */
         public static function add_panel( $args )
         {
@@ -76,7 +76,7 @@ if ( ! class_exists( 'RVN_Customizer_Controls_Interface' ) ) :
          * Adds a customizer section.
          *
          * @param array $args
-         * @since 1.0
+         * @since 1.0.0
          */
         public static function add_section( $args )
         {
@@ -93,7 +93,7 @@ if ( ! class_exists( 'RVN_Customizer_Controls_Interface' ) ) :
          * Adds a customizer control.
          *
          * @param array $args
-         * @since 1.0
+         * @since 1.0.0
          */
         public static function add_control( $args )
         {
@@ -138,7 +138,7 @@ if ( ! class_exists( 'RVN_Customizer_Controls_Interface' ) ) :
          * Adds a text control.
          *
          * @param array $args
-         * @since 1.0
+         * @since 1.0.0
          */
         public static function add_text_control( $args )
         {
@@ -151,7 +151,7 @@ if ( ! class_exists( 'RVN_Customizer_Controls_Interface' ) ) :
          * Adds a checkbox control.
          *
          * @param array $args
-         * @since 1.0
+         * @since 1.0.0
          */
         public static function add_checkbox_control( $args )
         {
@@ -165,7 +165,7 @@ if ( ! class_exists( 'RVN_Customizer_Controls_Interface' ) ) :
          * Adds a select control.
          *
          * @param array $args
-         * @since 1.0
+         * @since 1.0.0
          */
         public static function add_select_control( $args )
         {
@@ -179,7 +179,7 @@ if ( ! class_exists( 'RVN_Customizer_Controls_Interface' ) ) :
          * Adds a color control.
          *
          * @param array $args
-         * @since 1.0
+         * @since 1.0.0
          */
         public static function add_color_control( $args )
         {
@@ -193,7 +193,7 @@ if ( ! class_exists( 'RVN_Customizer_Controls_Interface' ) ) :
          * Adds a image control.
          *
          * @param array $args
-         * @since 1.0
+         * @since 1.0.0
          */
         public static function add_image_control( $args )
         {

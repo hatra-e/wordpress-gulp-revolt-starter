@@ -10,7 +10,7 @@ if ( ! function_exists( 'rvn_modify_cmb2_assets_url' ) ) :
      * Change URLs if symlink is used for development.
      *
      * @wp-hook cmb2_meta_box_url
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_modify_cmb2_assets_url( $url ) {
         /*

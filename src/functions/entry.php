@@ -11,7 +11,7 @@ if ( ! function_exists( 'rvn_put_meta' ) ) :
     /**
      * Entry meta
      *
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_put_meta( $items = array( 'date', 'author', 'categories' ) )
     {
@@ -90,7 +90,7 @@ if ( ! function_exists( 'rvn_put_page_links' ) ) :
     /**
      * Link pages
      *
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_put_page_links()
     {
@@ -107,7 +107,7 @@ if ( ! function_exists( 'rvn_put_entry_tags' ) ) :
     /**
      * Tags
      *
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_put_entry_tags()
     {
@@ -124,7 +124,7 @@ if ( ! function_exists( 'rvn_get_featured_image' ) ) :
     /**
      * Featured image
      *
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_get_featured_image()
     {
@@ -148,7 +148,7 @@ if ( ! function_exists( 'rvn_get_featured_video' ) ):
     /**
      * Featured video
      *
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_get_featured_video()
     {
@@ -188,7 +188,7 @@ if ( ! function_exists( 'rvn_get_featured_audio' ) ) :
     /**
      * Featured audio
      *
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_get_featured_audio()
     {
@@ -225,7 +225,7 @@ if ( ! function_exists( 'rvn_get_featured_link' ) ) :
     /**
      * Featured link
      *
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_get_featured_link()
     {
@@ -250,7 +250,7 @@ if ( ! function_exists( 'rvn_get_featured_gallery_slider' ) ) :
     /**
      * Featured gallery slider
      *
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_get_featured_gallery_slider()
     {

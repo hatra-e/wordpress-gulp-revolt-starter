@@ -10,7 +10,7 @@ if ( ! class_exists( 'RVN_Customizer_Controls' ) ) :
      * Registers all customizer controls.
      *
      * @wp-hook customize_register
-     * @since 1.0
+     * @since 1.0.0
      */
     class RVN_Customizer_Controls extends RVN_Customizer_Controls_Interface
     {
@@ -19,7 +19,7 @@ if ( ! class_exists( 'RVN_Customizer_Controls' ) ) :
         /**
          * Register all controls.
          *
-         * @since 1.0
+         * @since 1.0.0
          */
         public static function register( $wp_customize )
         {
@@ -33,7 +33,7 @@ if ( ! class_exists( 'RVN_Customizer_Controls' ) ) :
         /**
          * Register Example Controls
          *
-         * @since 1.0
+         * @since 1.0.0
          */
         public static function register_example_contols ()
         {

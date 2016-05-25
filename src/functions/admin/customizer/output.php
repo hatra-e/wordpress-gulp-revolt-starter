@@ -10,7 +10,7 @@ if ( ! class_exists( 'RVN_Customizer_Output' ) ) :
      * Renders the customizer CSS code.
      *
      * @wp-hook wp_head
-     * @since 1.0
+     * @since 1.0.0
      */
     class RVN_Customizer_Output extends RVN_Customizer_Output_Helpers
     {
@@ -20,7 +20,7 @@ if ( ! class_exists( 'RVN_Customizer_Output' ) ) :
         /**
          * Renders the customizer CSS code.
          *
-         * @since 1.0
+         * @since 1.0.0
          */
         public static function render_css()
         {

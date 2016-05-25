@@ -12,7 +12,7 @@ if ( ! function_exists( 'rvn_enqueue_admin_scripts' ) ) :
      * Enqueue scripts for the admin area.
      *
      * @wp-hook wp_enqueue_scripts
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_enqueue_admin_scripts()
     {
@@ -34,7 +34,7 @@ if ( ! function_exists( 'rvn_enqueue_admin_styles' ) ) :
      * Enqueue styles for the admin area.
      *
      * @wp-hook wp_enqueue_scripts
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_enqueue_admin_styles()
     {

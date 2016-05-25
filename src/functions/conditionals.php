@@ -11,7 +11,7 @@ if ( ! function_exists( 'rvn_is_portfolio' ) ) :
     /**
      * Is portfolio?
      *
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_is_portfolio()
     {
@@ -25,7 +25,7 @@ if ( ! function_exists( 'rvn_is_portfolio_archive' ) ) :
     /**
      * Is portfolio archive?
      *
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_is_portfolio_archive()
     {
@@ -39,7 +39,7 @@ if ( ! function_exists( 'rvn_is_portfolio_item' ) ) :
     /**
      * Is portfolio item?
      *
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_is_portfolio_item()
     {
@@ -53,7 +53,7 @@ if ( ! function_exists( 'rvn_is_post_type' ) ) :
     /**
      * Is post type?
      *
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_is_post_type( $post_type )
     {

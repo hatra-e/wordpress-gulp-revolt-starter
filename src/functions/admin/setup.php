@@ -28,7 +28,7 @@ endif;
  * indicating support post thumbnails.
  *
  * @wp-hook after_setup_theme
- * @since 1.0
+ * @since 1.0.0
  */
 if ( ! function_exists( 'rvn_theme_setup' ) ) :
     function rvn_theme_setup()

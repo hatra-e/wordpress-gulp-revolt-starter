@@ -12,7 +12,7 @@ if ( ! function_exists( 'rvn_enqueue_scripts' ) ) :
      * Enqueue scripts for frontend use.
      *
      * @wp-hook wp_enqueue_scripts
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_enqueue_scripts()
     {
@@ -58,7 +58,7 @@ if ( ! function_exists( 'rvn_enqueue_styles' ) ) :
      * Enqueue styles for frontend use.
      *
      * @wp-hook wp_enqueue_scripts
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_enqueue_styles()
     {

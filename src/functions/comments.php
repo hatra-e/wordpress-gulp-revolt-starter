@@ -11,7 +11,7 @@ if ( !function_exists( 'rvn_list_comments' ) ) :
      *
      * Used as a callback by wp_list_comments() for listing the comments.
      *
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_list_comments( $comment, $args, $depth )
     {
@@ -75,6 +75,8 @@ if ( ! function_exists( 'rvn_list_pings' ) ) :
      * Template for pings.
      *
      * Used as a callback by wp_list_comments() for listing the pings.
+     *
+     * @since 1.0.0
      */
     function rvn_list_pings( $comment, $args, $depth )
     {
@@ -95,7 +97,7 @@ if ( !function_exists( 'rvn_comment_form' ) ):
      *
      * Outputs the comment form below the comment listings.
      *
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_comment_form()
     {

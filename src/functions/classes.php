@@ -13,7 +13,7 @@ if ( ! function_exists( 'rvn_add_body_classes' ) ) :
      *
      * @param array $classes Classes for the body element.
      * @return array
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_add_body_classes( $classes )
     {
@@ -76,7 +76,7 @@ if ( ! function_exists( 'rvn_add_post_classes' ) ) :
      *
      * @param array $classes Classes for the post.
      * @return array
-     * @since 1.0
+     * @since 1.0.0
      */
     function rvn_add_post_classes($classes)
     {
