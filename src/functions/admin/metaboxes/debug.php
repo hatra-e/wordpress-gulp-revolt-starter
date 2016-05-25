@@ -27,7 +27,7 @@ if ( ! function_exists( 'rvn_modify_cmb2_assets_url' ) ) :
 
         return str_replace(
             '/Users/Ruven/Sites/_github-repos/wordpress-starter/build', // Replace this with your own path.
-            '/wp-content/themes/starter',
+            '/wp-content/themes/starter',  // Replace this with your own path.
             $url
         );
     }
