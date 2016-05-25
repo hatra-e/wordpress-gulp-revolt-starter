@@ -29,7 +29,7 @@ if ( ! function_exists( 'rvn_is_portfolio_archive' ) ) :
      */
     function rvn_is_portfolio_archive()
     {
-        return ( is_archive() && 'portfolio' == get_post_type() );
+        return ( is_archive() && rvn_is_post_type( 'portfolio' ) );
     }
 endif;
 
