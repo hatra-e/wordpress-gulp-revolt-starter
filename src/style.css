@@ -1,0 +1,958 @@
+/*
+Theme Name: Starter Theme
+Theme URI: http://themeforest.net/user/RuvenThemes/portfolio
+Description: Description Text Here
+Version: 1.0
+Author: Ruven
+Author URI: http://ruventhemes.com/
+License: WordPress related PHP Code under GNU General Public License (Version 3.0)
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+/*
+
+
+
+===============================================================
+===============================================================
+===============================================================
+===============================================================
+*/
+/* @group +++ DEMO STUFF (DELETE) +++ */
+/*
+===============================================================
+===============================================================
+===============================================================
+===============================================================
+
+
+
+*/
+#site {
+  margin: 0 auto;
+  width: 940px;
+}
+
+#site-header {
+  overflow: hidden;
+}
+
+#site-header #site-logo,
+#site-header #site-title {
+  float: left;
+}
+
+#site-header #site-navigation {
+  float: right;
+}
+
+#site-header #site-navigation ul li ul {
+  display: none;
+}
+
+.site-navigation li {
+  float: left;
+  margin-left: 10px;
+}
+
+#site-header,
+#site-body,
+#site-content .hentry,
+#site-content #page-header {
+  border-bottom: 1px solid #333;
+}
+
+#site-body {
+  overflow: hidden;
+  border-bottom: 1px solid #333;
+}
+
+#site-content {
+  float: left;
+  width: 670px;
+  padding-right: 30px;
+}
+
+#site-content.full-width {
+  float: none;
+  width: auto;
+  padding-right: 0;
+}
+
+#site-content #page-header {
+  padding: 20px 0;
+}
+
+#site-content .hentry {
+  margin: 20px 0;
+  padding-bottom: 20px;
+}
+
+#site-content .hentry .entry-header {
+  margin-bottom: 23px;
+}
+
+#comments .commentlist .comment {
+  margin-bottom: 20px;
+}
+
+#comments .commentlist ul {
+  margin-left: 20px;
+}
+
+#site-sidebar {
+  border-left: 1px solid #333;
+  float: right;
+  width: 270px;
+  padding-left: 30px;
+}
+
+#site-sidebar .widget {
+  padding-bottom: 20px;
+}
+
+#site-sidebar .widget ul li ul {
+  margin-left: 20px;
+}
+
+#site-footer {
+  overflow: hidden;
+}
+
+/*
+
+
+
+===============================================================
+===============================================================
+===============================================================
+===============================================================
+*/
+/* @group +++ GLOBAL ELEMENTS +++ */
+/*
+===============================================================
+===============================================================
+===============================================================
+===============================================================
+
+
+
+*/
+/* ------------------------------------------------------------ */
+/* @group Reset */
+/* ------------------------------------------------------------ */
+/* http://meyerweb.com/eric/tools/css/reset/ | v2.0 | 20110126 | License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+/* Hide from IE Mac \*/
+.clearfix {
+  display: block;
+}
+
+/* End hide from IE Mac */
+.none {
+  display: none;
+}
+
+/* End Clearfix */
+/* ------------------------------------------------------------ */
+/* @group Main */
+/* ------------------------------------------------------------ */
+/*
+Modular Scale:
+16px @ 1:1.618
+670px @ 1:1.618
+http://modularscale.com/scale/?px1=16&px2=670&ra1=1.618&ra2=0
+*/
+html {
+  font-size: 15px;
+}
+
+body {
+  line-height: 1.618;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: white;
+  color: black;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+}
+
+/* ------------------------------------------------------------ */
+/* @group Transitions */
+/* ------------------------------------------------------------ */
+a,
+button,
+.button,
+textarea:focus,
+input[type=submit],
+input[type="url"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus {
+  transition: all .1s linear;
+  -o-transition: all .1s linear;
+  -ms-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+}
+
+/* ------------------------------------------------------------ */
+/* @group Links */
+/* ------------------------------------------------------------ */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* ------------------------------------------------------------ */
+/* @group Headings */
+/* ------------------------------------------------------------ */
+h1, h2, h3,
+h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.334em;
+  line-height: 1.130;
+}
+
+h2 {
+  font-size: 1.776em;
+  line-height: 1.211;
+}
+
+h3 {
+  font-size: 1.334em;
+  line-height: 1.341;
+}
+
+h4 {
+  font-size: 1.000em;
+}
+
+h5 {
+  font-size: 0.618em;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-size: 0.551em;
+  text-transform: uppercase;
+}
+
+/* ------------------------------------------------------------ */
+/* @group Images */
+/* ------------------------------------------------------------ */
+/* Responsive Image */
+img {
+  vertical-align: bottom;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+}
+
+/* ------------------------------------------------------------ */
+/* @group Videos */
+/* ------------------------------------------------------------ */
+video {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.wp-video {
+  width: 100% !important;
+}
+
+/* ------------------------------------------------------------ */
+/* @group Forms */
+/* ------------------------------------------------------------ */
+fieldset legend {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+  margin: 30px 0 15px;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+  cursor: pointer;
+}
+
+textarea,
+input[type="url"],
+input[type="tel"],
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+  font-size: .85em;
+  line-height: 1.65;
+  border: 1px solid;
+  padding: 8px 10px;
+}
+
+:-moz-placeholder {
+  color: black;
+}
+
+::-webkit-input-placeholder {
+  color: black;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type=checkbox] + label,
+input[type=radio] + label {
+  font-weight: normal;
+}
+
+button,
+input[type=submit] {
+  background: red;
+  color: white;
+  border: none;
+  padding: 9px 14px;
+}
+
+button:hover,
+input[type=submit]:hover {
+  background: black;
+}
+
+/* ------------------------------------------------------------ */
+/* @group Misc */
+/* ------------------------------------------------------------ */
+iframe,
+object {
+  font-size: 0;
+  /* Firefox/IE fix: no bottom space */
+  line-height: 0;
+  /* Firefox/IE fix: no bottom space */
+  vertical-align: bottom;
+  /* Webkit fix: no bottom space */
+  /* Trying to fix YouTube videos that overlay drop down menus and lightbox overlays */
+  z-index: 1;
+  position: relative;
+}
+
+b,
+dt,
+strong {
+  font-weight: bold;
+}
+
+i,
+em,
+dfn,
+cite,
+address {
+  font-style: italic;
+}
+
+tt,
+pre,
+kbd,
+code {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: .85em;
+}
+
+pre {
+  line-height: 1.65;
+  overflow: auto;
+  white-space: pre;
+}
+
+blockquote {
+  font-weight: bold;
+  font-style: italic;
+}
+
+blockquote cite {
+  font-weight: normal;
+  font-style: normal;
+}
+
+abbr,
+acronym {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+ins {
+  text-decoration: overline;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+sub,
+sup {
+  font-size: .85em;
+  line-height: 1;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  top: 0.4em;
+}
+
+sup {
+  bottom: 0.5em;
+}
+
+/*
+
+
+
+===============================================================
+===============================================================
+===============================================================
+===============================================================
+*/
+/* @group +++ LAYOUT MODULES +++ */
+/*
+===============================================================
+===============================================================
+===============================================================
+===============================================================
+
+
+
+*/
+/* ------------------------------------------------------------ */
+/* @group Site */
+/* ------------------------------------------------------------ */
+#site {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ------------------------------------------------------------ */
+/* @group Body */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* @group Header */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* @group Tagline */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* @group Mobile Menu */
+/* ------------------------------------------------------------ */
+.mobile-menu {
+  display: none;
+}
+@media only screen and (max-width: 900px) {
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.mobile-menu-bar {
+  text-align: center;
+}
+
+.mobile-menu-navigation-button {
+  font-size: 22px;
+  padding: 10px;
+  display: block;
+}
+.mobile-menu-navigation-button span {
+  display: none;
+}
+
+.mobile-menu-navigation {
+  display: none;
+  border-top: 1px solid black;
+}
+.mobile-menu-navigation ul li a {
+  border-bottom: 1px solid black;
+}
+.mobile-menu-navigation ul li a {
+  display: block;
+  padding: 10px 16px;
+  font-size: 15px;
+}
+.mobile-menu-navigation ul li ul li a {
+  padding-left: 32px;
+}
+.mobile-menu-navigation ul li ul li ul li a {
+  padding-left: 48px;
+}
+
+/* ------------------------------------------------------------ */
+/* @group Site Content */
+/* ------------------------------------------------------------ */
+#site-content {
+  overflow: hidden;
+  position: relative;
+}
+
+/* ------------------------------------------------------------ */
+/* @group Entry */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* @group Paginator */
+/* ------------------------------------------------------------ */
+.paginator {
+  overflow: hidden;
+}
+.paginator .prev {
+  float: left;
+}
+.paginator .next {
+  float: right;
+}
+
+/*
+
+
+
+===============================================================
+===============================================================
+===============================================================
+===============================================================
+*/
+/* @group +++ CONTENT ELEMENTS +++ */
+/*
+===============================================================
+===============================================================
+===============================================================
+===============================================================
+
+
+
+*/
+/* ------------------------------------------------------------ */
+/* @group Content (Container) */
+/* ------------------------------------------------------------ */
+.content:before, .content:after {
+  content: "";
+  display: table;
+}
+.content:after {
+  clear: both;
+}
+
+/* ------------------------------------------------------------ */
+/* @group Bottom Margins */
+/* ------------------------------------------------------------ */
+.content p,
+.content ul,
+.content ol,
+.content dl,
+.content dd,
+.content form,
+.content fieldset,
+.content table,
+.content blockquote,
+.content pre,
+.content .alignnone {
+  margin-bottom: 20px;
+}
+
+.content *:last-child {
+  margin-bottom: 0;
+}
+
+/* ------------------------------------------------------------ */
+/* @group Headings */
+/* ------------------------------------------------------------ */
+.content h1 {
+  margin: 3.382rem 0 1.618rem;
+}
+.content h2 {
+  margin: 2.618rem 0 20px;
+}
+.content h3 {
+  margin: 2.334rem 0 1rem;
+}
+.content h4 {
+  margin: 1.618rem 0 0.618rem;
+}
+.content h5 {
+  margin: 1.618rem 0 0.618rem;
+}
+.content h6 {
+  margin: 1.618rem 0 0.334rem;
+}
+.content h1:first-child,
+.content h2:first-child,
+.content h3:first-child,
+.content h4:first-child,
+.content h5:first-child,
+.content h6:first-child {
+  margin-top: 0;
+}
+
+/* ------------------------------------------------------------ */
+/* @group Links */
+/* ------------------------------------------------------------ */
+.content a {
+  text-decoration: none;
+}
+.content a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------------------------------------------ */
+/* @group Lists */
+/* ------------------------------------------------------------ */
+.content ul, .content ol {
+  list-style-position: outside;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.content ul ul, .content ul ol, .content ol ul, .content ol ol {
+  margin-bottom: 0;
+}
+.content ul {
+  list-style-type: square;
+}
+.content ol {
+  list-style-type: decimal;
+}
+
+/* ------------------------------------------------------------ */
+/* @group Table */
+/* ------------------------------------------------------------ */
+/* Generic */
+.content table {
+  width: 100%;
+}
+.content table caption {
+  font-weight: bold;
+}
+.content table th,
+.content table td {
+  text-align: left;
+  vertical-align: middle;
+}
+.content table thead tr th,
+.content table tfoot tr td {
+  font-weight: bold;
+}
+
+/* Style */
+.content table caption {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 12px;
+  text-align: left;
+}
+.content table th,
+.content table td {
+  border-bottom: 1px solid #e1e1e1;
+  padding: 12px 20px;
+}
+.content table thead {
+  border-bottom: 3px solid #e1e1e1;
+}
+.content table tfoot {
+  border-top: 3px solid #e1e1e1;
+}
+.content table tfoot th,
+.content table tfoot td {
+  border-bottom: none;
+}
+
+/*
+
+
+
+===============================================================
+===============================================================
+===============================================================
+===============================================================
+*/
+/* @group +++ CONTENT MODULES +++ */
+/*
+===============================================================
+===============================================================
+===============================================================
+===============================================================
+
+
+
+*/
+/* ------------------------------------------------------------ */
+/* @group Alignments & Helpers */
+/* ------------------------------------------------------------ */
+.content .alignleft {
+  float: left;
+  margin: 5px 15px 5px 0;
+  display: block;
+}
+.content .alignright {
+  float: right;
+  margin: 5px 0    5px 15px;
+  display: block;
+}
+.content .aligncenter {
+  margin: 5px auto;
+  display: block;
+}
+
+/* ------------------------------------------------------------ */
+/* @group WP Caption */
+/* ------------------------------------------------------------ */
+.wp-caption {
+  max-width: 100%;
+}
+
+.wp-caption-text {
+  display: block;
+  padding: 10px 15px;
+  font-size: .85em;
+  margin-bottom: 0 !important;
+}
+
+/* ------------------------------------------------------------ */
+/* @group WP Gallery */
+/* ------------------------------------------------------------ */
+.content .gallery {
+  overflow: hidden;
+  margin-right: -10px;
+  margin-bottom: 10px;
+}
+.content .gallery .gallery-item {
+  float: left;
+  margin-bottom: 0;
+  padding: 0 10px 10px 0;
+}
+.content .gallery .gallery-item img {
+  width: 100%;
+}
+.content .gallery.gallery-columns-1 .gallery-item {
+  width: 100%;
+}
+.content .gallery.gallery-columns-2 .gallery-item {
+  width: 50%;
+}
+.content .gallery.gallery-columns-3 .gallery-item {
+  width: 33.333333333%;
+}
+.content .gallery.gallery-columns-4 .gallery-item {
+  width: 25%;
+}
+.content .gallery.gallery-columns-5 .gallery-item {
+  width: 20%;
+}
+.content .gallery.gallery-columns-6 .gallery-item {
+  width: 16.666666667%;
+}
+.content .gallery.gallery-columns-7 .gallery-item {
+  width: 14.285714285%;
+}
+.content .gallery.gallery-columns-8 .gallery-item {
+  width: 12.5%;
+}
+.content .gallery.gallery-columns-9 .gallery-item {
+  width: 11.111111111%;
+}
+.content .gallery.gallery-columns-5 .gallery-item .wp-caption-text, .content .gallery.gallery-columns-6 .gallery-item .wp-caption-text, .content .gallery.gallery-columns-7 .gallery-item .wp-caption-text, .content .gallery.gallery-columns-8 .gallery-item .wp-caption-text, .content .gallery.gallery-columns-9 .gallery-item .wp-caption-text {
+  display: none;
+}
+.content .gallery.gallery-columns-1 {
+  margin-right: 0;
+}
+.content .gallery.gallery-columns-1 .gallery-item {
+  float: none;
+  padding-right: 0;
+}
+.content .gallery.gallery-columns-1 .gallery-item .gallery-caption {
+  font-size: 1em;
+  padding: 15px 20px;
+}
+.content .gallery.gallery-columns-1 br {
+  display: none;
+}
+.content .gallery br:last-child {
+  display: none;
+}
+
+/* ------------------------------------------------------------ */
+/* @group FlexSlider */
+/* ------------------------------------------------------------ */
+/* FlexSlider Necessary Styles */
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+
+.flexslider .slides img {
+  width: 100% !important;
+  display: block !important;
+}
+
+/* Clearfix for the .slides element */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+html[xmlns] .slides {
+  display: block;
+}
+
+* html .slides {
+  height: 1%;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {
+  display: block;
+}
+
+/* FlexSlider Theme */
+.flexslider {
+  position: relative;
+  cursor: pointer;
+}
+
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.loading .flex-viewport {
+  max-height: 300px;
+}
+
+/* Direction Nav */
+.flex-direction-nav {
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 50%;
+  right: 0;
+  height: 42px;
+}
+
+.flex-direction-nav a {
+  text-align: center;
+  color: #888;
+  background-color: white;
+  width: 42px;
+  height: 42px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  top: 21px;
+  /* Icon Size */
+  font-size: 16px;
+  line-height: 1;
+  padding-top: 13px;
+  z-index: 10;
+}
+
+.flex-direction-nav a.flex-next {
+  right: 0;
+  -webkit-border-bottom-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  -webkit-border-top-left-radius: 100px;
+  border-top-left-radius: 100px;
+  background-clip: padding-box;
+}
+
+.flex-direction-nav a.flex-prev {
+  left: 0;
+  -webkit-border-bottom-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  -webkit-border-top-right-radius: 100px;
+  border-top-right-radius: 100px;
+  background-clip: padding-box;
+}
+
+.flex-direction-nav a:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}

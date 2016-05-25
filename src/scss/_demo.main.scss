@@ -1,0 +1,61 @@
+//
+// DEMO.MAIN
+//
+
+
+
+body,
+.c-site,
+.c-masthead,
+.c-body,
+.c-footer,
+.o-container,
+.c-main,
+.c-page-header {
+    background: rgba(lightblue, .4);
+}
+
+.c-sidebar,
+.c-entry {
+    background: rgba(silver, .3);
+}
+
+.c-masthead,
+.c-entry {
+    border-bottom: 3px solid gray;
+}
+
+.c-footer {
+    border-top: 3px solid gray;
+}
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+
+.c-entry {
+    @include clearfix;
+}
+
+.c-main {
+    float: left;
+    width: 70%;
+}
+
+.c-main--full-width {
+    float: none;
+    width: auto;
+}
+
+.c-sidebar {
+    float: left;
+    width: 30%;
+    padding-left: 30px;
+}
+
+.o-container {
+    @include clearfix;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 88%;
+}

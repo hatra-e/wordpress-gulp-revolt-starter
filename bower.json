@@ -1,0 +1,33 @@
+{
+  "name": "wordpress-gulp-revolt-starter",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ruven Pelka",
+      "email": "ruven.pelka@gmail.com",
+      "homepage": "http://ruvenpelka.com"
+    }
+  ],
+  "keywords": [
+    "wordpress",
+    "wordpress-theme",
+    "revolt",
+    "starter-kit",
+    "gulp",
+    "bower",
+    "sass",
+    "browsersync"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    ".sass-cache",
+    "build"
+  ],
+  "dependencies": {
+    "revolt.all": "^0.2.0"
+  }
+}

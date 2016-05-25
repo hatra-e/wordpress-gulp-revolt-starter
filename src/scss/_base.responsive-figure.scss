@@ -1,0 +1,12 @@
+//
+// BASE.FIGURE
+//
+
+
+// 1. Make WP figure elements responsive, even when height/width is directly
+//    applied to them.
+
+figure {
+    max-width: 100%; // [1]
+    height: auto; // [1]
+}
