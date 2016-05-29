@@ -25,7 +25,7 @@
                 </p>
             <?php endif; ?>
         </header>
-    </div><!-- /c-container -->
+    </div><!-- /o-container -->
 
 <?php elseif ( is_tag() ) : ?>
 
@@ -46,7 +46,7 @@
                 </p>
             <?php endif; ?>
         </header>
-    </div><!-- /c-container -->
+    </div><!-- /o-container -->
 
 <?php elseif ( is_tax() ) : ?>
 
@@ -70,7 +70,7 @@
                 </p>
             <?php endif; ?>
         </header>
-    </div><!-- /c-container -->
+    </div><!-- /o-container -->
 
 <?php elseif ( is_author() ) : ?>
 
@@ -84,7 +84,7 @@
                 ?>
             </h1>
         </header>
-    </div><!-- /c-container -->
+    </div><!-- /o-container -->
 
 <?php elseif ( is_search() ) : ?>
 
@@ -96,7 +96,7 @@
                 ?>
             </h1>
         </header>
-    </div><!-- /c-container -->
+    </div><!-- /o-container -->
 
 <?php elseif ( is_day() ) : ?>
 
@@ -108,7 +108,7 @@
                 ?>
             </h1>
         </header>
-    </div><!-- /c-container -->
+    </div><!-- /o-container -->
 
 <?php elseif ( is_month() ) : ?>
 
@@ -120,7 +120,7 @@
                 ?>
             </h1>
         </header>
-    </div><!-- /c-container -->
+    </div><!-- /o-container -->
 
 <?php elseif ( is_year() ) : ?>
 
@@ -132,7 +132,7 @@
                 ?>
             </h1>
         </header>
-    </div><!-- /c-container -->
+    </div><!-- /o-container -->
 
 <?php elseif ( rvn_is_portfolio() ) : ?>
 
@@ -144,7 +144,7 @@
                 ?>
             </h1>
         </header>
-    </div><!-- /c-container -->
+    </div><!-- /o-container -->
 
 <?php elseif ( rvn_is_portfolio_item() ) : ?>
 
@@ -169,6 +169,6 @@
                 ?>
             </h1>
         </header>
-    </div><!-- /c-container -->
+    </div><!-- /o-container -->
 
 <?php endif; ?>

@@ -22,7 +22,7 @@
                 </nav><!-- /c-footer__nav -->
             <?php endif; ?>
 
-        </div><!-- /c-container -->
+        </div><!-- /o-container -->
     </footer><!-- /c-footer -->
 
     <?php do_action( 'rvn_before_site_end' ); ?>

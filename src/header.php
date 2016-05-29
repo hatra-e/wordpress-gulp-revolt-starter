@@ -37,7 +37,7 @@
             <div class="o-container">
                 <?php get_template_part( 'components/header', 'brand' ); ?>
                 <?php get_template_part( 'components/header', 'navbar' ); ?>
-            </div><!-- /c-container -->
+            </div><!-- /o-container -->
         </header><!-- /c-masthead -->
 
         <div class="c-body">
