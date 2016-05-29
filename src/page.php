@@ -22,6 +22,6 @@
 
     <?php get_sidebar(); ?>
 
-</div   ><!-- /o-container -->
+</div><!-- /o-container -->
 
 <?php get_footer(); ?>
