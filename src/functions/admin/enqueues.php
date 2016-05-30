@@ -40,7 +40,7 @@ if ( ! function_exists( 'rvn_enqueue_admin_styles' ) ) :
     {
         // Enqueue meta boxes stylesheet
 //        wp_enqueue_style(
-//            'rvn_meta-boxes', RVN_TEMPLATE_URL . '/functions/meta-boxes/meta-boxes.css',
+//            'rvn_metaboxes', RVN_TEMPLATE_URL . '/functions/admin/metaboxes/metaboxes.css',
 //            array(),
 //            RVN_THEME_VERSION
 //        );
