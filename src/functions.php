@@ -28,7 +28,7 @@ require_once( 'functions/admin/enqueues.php' );
 
 // Admin: Metaboxes
 require_once( 'functions/admin/metaboxes/cmb2/init.php' );
-require_once( 'functions/admin/metaboxes/debug.php' );
+//require_once( 'functions/admin/metaboxes/symlink-filter.php' );
 require_once( 'functions/admin/metaboxes/post-formats.php' );
 
 // Admin: Customizer

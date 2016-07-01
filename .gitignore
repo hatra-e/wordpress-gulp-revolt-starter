@@ -14,6 +14,7 @@ Thumbs.db
 .DS_Store
 
 ## WordPress
+wp
 wp-config.php
 wp-content/uploads/
 wp-content/blogs.dir/

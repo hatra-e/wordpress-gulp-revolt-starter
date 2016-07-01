@@ -1,12 +1,12 @@
 // ==== CONFIGURATION ==== //
 
 // Project paths
-var project     = 'starter-theme'           // The directory name for your theme; change this at the very least!
-  , src         = './src/'                  // The raw material of your theme: custom scripts, SCSS source files, PHP files, images, etc.; do not delete this folder!
-  , build       = './build/'                // A temporary directory containing a development version of your theme; delete it anytime
-  , dist        = './dist/'+project+'/'     // The distribution package that you'll be uploading to your server; delete it anytime
-  , bower       = src + 'bower_components/' // Bower packages
-  , modules     = './node_modules/'         // npm packages
+var project     = 'starter-theme'                       // The directory name for your theme; change this at the very least!
+  , src         = './src/'                              // The raw material of your theme: custom scripts, SCSS source files, PHP files, images, etc.; do not delete this folder!
+  , build       = './wp/wp-content/themes/'+project+'/' // A temporary directory containing a development version of your theme; delete it anytime
+  , dist        = './dist/'+project+'/'                 // The distribution package that you'll be uploading to your server; delete it anytime
+  , bower       = src + 'bower_components/'             // Bower packages
+  , modules     = './node_modules/'                     // npm packages
 ;
 
 // Project settings
@@ -17,7 +17,7 @@ module.exports = {
   , notify: true // In-line notifications (the blocks of text saying whether you are connected to the BrowserSync server or not)
   , open: true // Set to false if you don't like the browser window opening automatically
   , port: 3000 // Port number for the live version of the site; default: 3000
-  , proxy: 'localhost:8888/_wp/demo-content' // We need to use a proxy instead of the built-in server because WordPress has to do some server-side rendering for the theme to work
+  , proxy: 'localhost:8888/_github-repos/wordpress-gulp-revolt-starter/wp' // We need to use a proxy instead of the built-in server because WordPress has to do some server-side rendering for the theme to work
   , watchOptions: {
       debounceDelay: 2000 // This introduces a small delay when watching for file change events to avoid triggering too many reloads
     }
