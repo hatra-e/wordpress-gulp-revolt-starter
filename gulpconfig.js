@@ -5,7 +5,7 @@ var project     = 'starter-theme'                       // The directory name fo
   , src         = './src/'                              // The raw material of your theme: custom scripts, SCSS source files, PHP files, images, etc.; do not delete this folder!
   , build       = './wp/wp-content/themes/'+project+'/' // A temporary directory containing a development version of your theme; delete it anytime
   , dist        = './dist/'+project+'/'                 // The distribution package that you'll be uploading to your server; delete it anytime
-  , bower       = src + 'bower_components/'             // Bower packages
+  , bower       = './bower_components/'                 // Bower packages
   , modules     = './node_modules/'                     // npm packages
 ;
 
