@@ -23,6 +23,28 @@ module.exports = {
     }
   },
 
+  deploy: {
+    ftp: {
+      dist: build
+      , remotePath: '/public_html/wp-content/themes/'+project
+      , deploy: {
+        host:       'website.com'
+        , user:     'johndoe'
+        , password: '1234'
+        , parallel: 10
+      }
+    }
+    , sftp: {
+      dist: build
+      , deploy: {
+        host:         'website.com'
+        , user:       'johndoe'
+        , pass:       '1234'
+        , remotePath: '/public_html/wp-content/themes/'+project
+      }
+    }
+  },
+
   images: {
     build: { // Copies images from `src` to `build`; does not optimize
       src: src+'**/*(*.png|*.jpg|*.jpeg|*.gif|*.svg)'
