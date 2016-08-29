@@ -25,7 +25,7 @@ if ( ! class_exists( 'RVN_Customizer_Controls' ) ) :
         {
             self::$wp_customize = $wp_customize;
 
-            self::register_example_contols();
+            self::register_example_controls();
         }
 
 
@@ -35,17 +35,17 @@ if ( ! class_exists( 'RVN_Customizer_Controls' ) ) :
          *
          * @since 1.0.0
          */
-        public static function register_example_contols ()
+        public static function register_example_controls()
         {
             self::add_panel( array(
                 'title' => _x('Example Panel', 'Customizer Panel', 'rvn'),
-                'id'    => 'example_panel',
+                'id'    => 'examplepanel',
             ) );
 
             self::add_section( array(
                 'title'       => _x( 'Example Section', 'Customizer Section', 'rvn' ),
-                'id'          => 'example_section',
-                'panel'       => 'example_panel',
+                'id'          => 'examplesection',
+                'panel'       => 'examplepanel',
                 'description' => __( 'My example description.', 'rvn' ),
             ) );
 
