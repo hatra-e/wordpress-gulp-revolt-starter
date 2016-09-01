@@ -8,7 +8,7 @@
 
 <div class="c-entry__meta">
     <?php if ( rvn_is_post_type( 'portfolio' ) ) : ?>
-        <?php rvn_put_meta( array( 'portfolio-category') ); ?>
+        <?php rvn_put_meta( array( 'portfolio-category' ) ); ?>
     <?php else : ?>
         <?php rvn_put_meta(); ?>
     <?php endif; ?>
