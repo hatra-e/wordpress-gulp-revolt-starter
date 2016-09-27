@@ -8,7 +8,7 @@
 
 <div class="o-container">
 
-    <main class="c-main c-main--full-width" role="main">
+    <main class="c-main c-main--full-width">
 
         <?php
     //    global $more;

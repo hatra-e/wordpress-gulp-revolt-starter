@@ -4,7 +4,7 @@
  */
 ?>
 
-<aside class="c-sidebar" role="complementary">
+<aside class="c-sidebar">
 
     <?php if ( ! dynamic_sidebar( 'sidebar-1' ) ): ?>
 

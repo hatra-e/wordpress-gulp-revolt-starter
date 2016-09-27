@@ -33,7 +33,7 @@
         </div>
         <!-- REMOVE -->
 
-        <header class="c-masthead" role="banner">
+        <header class="c-masthead">
             <div class="o-container">
                 <?php get_template_part( 'components/header', 'brand' ); ?>
                 <?php get_template_part( 'components/header', 'navbar' ); ?>

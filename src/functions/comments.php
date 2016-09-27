@@ -38,7 +38,7 @@ if ( !function_exists( 'rvn_list_comments' ) ) :
 
                 <div class="c-comment__meta">
                     <a class="c-comment__datetime" href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">
-                        <time pubdate datetime="<?php comment_time( 'c' ); ?>">
+                        <time datetime="<?php comment_time( 'c' ); ?>">
                             <?php printf( __( '%1$s at %2$s', 'rvn' ), get_comment_date(), get_comment_time() ); ?>
                         </time>
                     </a>

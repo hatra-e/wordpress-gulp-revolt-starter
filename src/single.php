@@ -8,7 +8,7 @@
 
 <div class="o-container">
 
-    <main class="c-main" role="main">
+    <main class="c-main">
 
         <?php while ( have_posts() ) : the_post(); ?>
 

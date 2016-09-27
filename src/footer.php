@@ -8,7 +8,7 @@
 
     </div><!-- /c-body -->
 
-    <footer class="c-footer" role="contentinfo">
+    <footer class="c-footer">
         <div class="o-container">
 
             <?php if ( has_nav_menu( 'footer' ) ) : ?>

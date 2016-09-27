@@ -12,7 +12,7 @@
 
 <div class="o-container">
 
-    <main class="c-main" role="main">
+    <main class="c-main">
 
         <?php if ( have_posts() ) : ?>
 
