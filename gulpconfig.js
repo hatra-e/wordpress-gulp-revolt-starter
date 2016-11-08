@@ -24,23 +24,24 @@ module.exports = {
   },
 
   deploy: {
-    ftp: {
-      dist: build
-      , remotePath: '/public_html/wp-content/themes/'+project
-      , deploy: {
-        host:       'website.com'
-        , user:     'johndoe'
-        , password: '1234'
-        , parallel: 10
+    protocol: 'ftp'
+  , watchFiles: [build+'/**', '!'+build+'/**.map']
+  , dist: build
+  , ftp: {
+      remotePath: '/public_html/wp-content/themes/'+project
+    , deploy: {
+        host:     'website.com'
+      , user:     'johndoe'
+      , password: '1234'
+      , parallel: 10
       }
     }
-    , sftp: {
-      dist: build
-      , deploy: {
-        host:         'website.com'
-        , user:       'johndoe'
-        , pass:       '1234'
-        , remotePath: '/public_html/wp-content/themes/'+project
+  , sftp: {
+      deploy: {
+        host:       'website.com'
+      , user:       'johndoe'
+      , pass:       '1234'
+      , remotePath: '/public_html/wp-content/themes/'+project
       }
     }
   },
@@ -129,7 +130,7 @@ module.exports = {
     , scripts:      src+'**/*.js' // You might also want to watch certain dependency trees but that's up to you
     , images:       src+'**/*(*.png|*.jpg|*.jpeg|*.gif|*.svg)'
     , theme:        src+'**/*.php'
-    , livereload:   build+'**/*'
     }
   }
+
 };

@@ -65,11 +65,6 @@ Note: both the `build` and `dist` directories are disposable and can be regenera
 
 ## Deployment
 
-After editing the `gulpconfig.js` and adding you FTP/SFTP credentials, you can use the following command to deploy via FTP:
+After editing the `gulpconfig.js`, and adding you FTP/SFTP credentials and defining the `protocol`, you can use the following command to deploy:
 
-    $ gulp deploy-ftp
-    
-Or the following command to deploy via SFTP:
-
-    $ gulp deploy-sftp
- 
+    $ gulp deploy
