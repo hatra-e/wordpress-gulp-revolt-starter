@@ -15,9 +15,7 @@ Text Domain: rvn
 ////////////////////////////////////////////////////////////////////////////////
 
 @import "../../bower_components/revolt.settings.defaults/settings.defaults";
-
 @import "../../bower_components/revolt.settings.spacing/settings.spacing";
-
 @import "../../bower_components/revolt.settings.responsive/settings.responsive";
 
 
@@ -27,9 +25,7 @@ Text Domain: rvn
 ////////////////////////////////////////////////////////////////////////////////
 
 @import "../../bower_components/revolt.tools.functions/tools.functions";
-
 @import "../../bower_components/revolt.tools.spacing/tools.spacing";
-
 @import "../../bower_components/revolt.tools.responsive/tools.responsive";
 
 @import "tools.clearfix";
@@ -41,11 +37,8 @@ Text Domain: rvn
 ////////////////////////////////////////////////////////////////////////////////
 
 @import "../../bower_components/revolt.generic.normalize/generic.normalize";
-
 @import "../../bower_components/revolt.generic.reset/generic.reset";
-
 @import "../../bower_components/revolt.generic.box-sizing/generic.box-sizing";
-
 @import "../../bower_components/revolt.generic.vertical-spacing/generic.vertical-spacing";
 
 
@@ -64,9 +57,7 @@ $revo-figure-figcation-bg: gray;
 @import "base.responsive-figure";
 
 @import "../../bower_components/revolt.base.hr/base.hr";
-
 @import "../../bower_components/revolt.base.lists/base.lists";
-
 @import "../../bower_components/revolt.base.responsive-images/base.responsive-images";
 
 //@import "base.responsive-media";
@@ -77,12 +68,9 @@ $revo-figure-figcation-bg: gray;
 // Objects
 ////////////////////////////////////////////////////////////////////////////////
 
-@import "../../bower_components/revolt.objects.list-bare/objects.grid";
-
+@import "../../bower_components/revolt.objects.grid/objects.grid";
 @import "../../bower_components/revolt.objects.list-bare/objects.list-bare";
-
 @import "../../bower_components/revolt.objects.list-inline/objects.list-inline";
-
 @import "../../bower_components/revolt.objects.media/objects.media";
 
 
@@ -120,7 +108,6 @@ $revo-figure-figcation-bg: gray;
 ////////////////////////////////////////////////////////////////////////////////
 
 @import "../../bower_components/revolt.trumps.spacing/trumps.spacing";
-
 @import "../../bower_components/revolt.trumps.spacing-responsive/trumps.spacing-responsive";
 
 @import "trumps.screen-reader";
