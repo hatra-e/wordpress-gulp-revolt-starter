@@ -77,6 +77,8 @@ $revo-figure-figcation-bg: gray;
 // Objects
 ////////////////////////////////////////////////////////////////////////////////
 
+@import "../../bower_components/revolt.objects.list-bare/objects.grid";
+
 @import "../../bower_components/revolt.objects.list-bare/objects.list-bare";
 
 @import "../../bower_components/revolt.objects.list-inline/objects.list-inline";
@@ -89,7 +91,7 @@ $revo-figure-figcation-bg: gray;
 // Components
 ////////////////////////////////////////////////////////////////////////////////
 
-//@import "components.demo";
+@import "../../bower_components/revolt.components.forms/components.forms";
 
 
 

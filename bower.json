@@ -28,6 +28,6 @@
     "build"
   ],
   "dependencies": {
-    "revolt.all": "^0.2.0"
+    "revolt.all": "0.2.x"
   }
 }
