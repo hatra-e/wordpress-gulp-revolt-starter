@@ -112,6 +112,10 @@ module.exports = {
       src: src+'**/*(*.eot|*.svg|*.ttf|*.woff)' // This simply copies JS files over; both this and the previous task could be combined if you like
     , dest: build
     }
+  , misc: {
+      src: src+'**/*(*.txt|*.md)' // This simply copies files over; both this and the previous task could be combined if you like
+    , dest: build
+    }
   },
 
   utils: {
