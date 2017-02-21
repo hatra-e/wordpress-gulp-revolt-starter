@@ -109,7 +109,7 @@ module.exports = {
     , dest: build
     }
   , fonts: {
-      src: src+'**/*(*.eot|*.svg|*.ttf|*.woff)' // This simply copies JS files over; both this and the previous task could be combined if you like
+      src: src+'**/*(*.eot|*.svg|*.ttf|*.woff|*.woff2)' // This simply copies font files over; both this and the previous task could be combined if you like
     , dest: build
     }
   , misc: {
