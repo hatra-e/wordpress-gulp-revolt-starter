@@ -152,6 +152,20 @@ if ( ! class_exists( 'RVN_Customizer_Controls_Interface' ) ) :
 
 
         /**
+         * Adds a textarea control.
+         *
+         * @param array $args
+         * @since 1.0.0
+         */
+        public static function add_textarea_control( $args )
+        {
+            $args['type'] = 'textarea';
+            self::add_control( $args );
+        }
+
+
+
+        /**
          * Adds a file control.
          *
          * @param array $args
