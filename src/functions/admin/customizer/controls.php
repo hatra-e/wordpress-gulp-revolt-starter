@@ -55,6 +55,11 @@ if ( ! class_exists( 'RVN_Customizer_Controls' ) ) :
 //                'default' => 'My default example text',
             ) );
 
+            parent::add_textarea_control( array(
+                'label'   => __( 'Example Textarea', 'rvn' ),
+                'id'      => 'example_textarea',
+            ) );
+
             self::add_checkbox_control( array(
                 'label'   => __( 'Example Checkbox', 'rvn' ),
                 'id'      => 'example_checkbox',
@@ -78,6 +83,11 @@ if ( ! class_exists( 'RVN_Customizer_Controls' ) ) :
                 'id'        => 'example_color',
                 'default'   => '#555555',
                 'transport' => 'postMessage', // Live-update
+            ) );
+
+            parent::add_file_control( array(
+                'label' => __( 'Example File', 'rvn' ),
+                'id'    => 'example_file',
             ) );
 
             parent::add_image_control( array(
