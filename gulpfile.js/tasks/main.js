@@ -23,7 +23,7 @@ gulp.task('autosync', function(callback) {
 });
 
 // Build a working copy of the theme
-gulp.task('build', ['images', 'scripts', 'styles', 'theme']);
+gulp.task('build', ['svg', 'images', 'scripts', 'styles', 'theme']);
 
 // Dist task chain: wipe -> build -> clean -> copy -> compress images
 // NOTE: this is a resource-intensive task!

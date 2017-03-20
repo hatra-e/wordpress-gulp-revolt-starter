@@ -48,17 +48,36 @@ module.exports = {
 
   images: {
     build: { // Copies images from `src` to `build`; does not optimize
-      src: src+'**/*(*.png|*.jpg|*.jpeg|*.gif|*.svg)'
+      src: src+'**/*(*.png|*.jpg|*.jpeg|*.gif)'
     , dest: build
     }
   , dist: {
-      src: [dist+'**/*(*.png|*.jpg|*.jpeg|*.gif|*.svg)', '!'+dist+'screenshot.png'] // The source is actually `dist` since we are minifying images in place
+      src: [dist+'**/*(*.png|*.jpg|*.jpeg|*.gif)', '!'+dist+'screenshot.png'] // The source is actually `dist` since we are minifying images in place
     , imagemin: {
         optimizationLevel: 7
       , progressive: true
       , interlaced: true
       }
     , dest: dist
+    }
+  },
+
+  svg: {
+    src: src + 'svg/**/*.svg'
+  , dest: build
+  , svgSprite: {
+      mode: {
+        symbol: { // symbol mode to build the SVG
+          render: {
+            css: false // CSS output option for icon sizing
+          , scss: false // SCSS output option for icon sizing
+          }
+        , dest: 'svg' // destination folder
+        , prefix: '.svg--%s' // BEM-style prefix if styles rendered
+        , sprite: 'sprite.svg' //generated sprite name
+        , example: true // Build a sample page, please!
+        }
+      }
     }
   },
 
