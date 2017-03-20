@@ -126,6 +126,10 @@ if ( ! class_exists( 'RVN_Customizer_Controls_Interface' ) ) :
                     unset( $args['type'] );
                     self::$wp_customize->add_control( new WP_Customize_Image_Control( self::$wp_customize, $id, $args ));
                     break;
+                case 'file':
+                    unset( $args['type'] );
+                    self::$wp_customize->add_control( new WP_Customize_Upload_Control( self::$wp_customize, $id, $args ));
+                    break;
                 default:
                     self::$wp_customize->add_control( $id, $args );
                     break;
@@ -142,6 +146,20 @@ if ( ! class_exists( 'RVN_Customizer_Controls_Interface' ) ) :
          */
         public static function add_text_control( $args )
         {
+            self::add_control( $args );
+        }
+
+
+
+        /**
+         * Adds a file control.
+         *
+         * @param array $args
+         * @since 1.0.0
+         */
+        public static function add_file_control( $args )
+        {
+            $args['type'] = 'file';
             self::add_control( $args );
         }
 
