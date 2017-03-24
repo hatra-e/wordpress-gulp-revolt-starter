@@ -94,6 +94,15 @@ if ( ! class_exists( 'RVN_Customizer_Controls' ) ) :
                 'label' => __( 'Example Image', 'rvn' ),
                 'id'    => 'example_image',
             ) );
+
+            parent::add_cropped_image_control( array(
+                'label'       => __( 'Example Cropped Image', 'rvn' ),
+                'id'          => 'example_cropped_image',
+                'flex_width'  => false,
+                'flex_height' => false,
+                'width'       => 500,
+                'height'      => 500,
+            ) );
         }
 
 
