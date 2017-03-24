@@ -90,6 +90,12 @@ if ( ! class_exists( 'RVN_Customizer_Controls' ) ) :
                 'id'    => 'example_file',
             ) );
 
+            parent::add_media_control( array(
+                'label'     => __( 'Example Media', 'rvn' ),
+                'id'        => 'example_media',
+//                'mime_type' => 'audio',
+            ) );
+
             parent::add_image_control( array(
                 'label' => __( 'Example Image', 'rvn' ),
                 'id'    => 'example_image',
