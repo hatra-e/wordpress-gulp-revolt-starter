@@ -154,6 +154,7 @@ if ( ! class_exists( 'RVN_Customizer_Controls_Interface' ) ) :
          */
         public static function add_text_control( $args )
         {
+            $args['type'] = 'text';
             self::add_control( $args );
         }
 
