@@ -14,7 +14,20 @@ Text Domain: rvn
 // Settings
 ////////////////////////////////////////////////////////////////////////////////
 
+$font-family:          sans-serif;
+$base-font-size:       16px;
+$base-line-height:     1.6;
+$base-color:           #333;
+$base-bg:              #fff;
+$base-border-color:    #ccc;
+
+$revo-root-font-size:       $base-font-size;
+$revo-base-line-height:     $base-line-height;
+$revo-base-color:           $base-color;
+$revo-base-bg:              $base-bg;
+$revo-base-border-color:    $base-border-color;
 @import "../../bower_components/revolt.settings.defaults/settings.defaults";
+
 @import "../../bower_components/revolt.settings.spacing/settings.spacing";
 @import "../../bower_components/revolt.settings.responsive/settings.responsive";
 
@@ -47,12 +60,13 @@ Text Domain: rvn
 // Base
 ////////////////////////////////////////////////////////////////////////////////
 
+$revo-font-family:    $font-family;
 @import "../../bower_components/revolt.base.root/base.root";
 
-$revo-figure-figcation-margin-top: 0;
-$revo-figure-figcation-padding-y: halve($revo-spacer-y);
-$revo-figure-figcation-padding-x: halve($revo-spacer-y);
-$revo-figure-figcation-bg: gray;
+$revo-figure-figcation-margin-top:    0;
+$revo-figure-figcation-padding-y:     halve($revo-spacer-y);
+$revo-figure-figcation-padding-x:     halve($revo-spacer-y);
+$revo-figure-figcation-bg:            gray;
 @import "../../bower_components/revolt.base.figure/base.figure";
 @import "base.responsive-figure";
 
@@ -99,7 +113,6 @@ $revo-figure-figcation-bg: gray;
 @import "wp.video";
 @import "wp.gallery";
 @import "wp.responsive-sizes";
-
 
 
 
