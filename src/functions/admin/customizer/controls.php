@@ -38,37 +38,41 @@ if ( ! class_exists( 'RVN_Customizer_Controls' ) ) :
         public static function register_example_controls()
         {
             self::add_panel( array(
-                'title' => _x('Example Panel', 'Customizer Panel', 'rvn'),
                 'id'    => 'examplepanel',
+                'title' => _x('Example Panel', 'Customizer Panel', 'rvn'),
             ) );
 
             self::add_section( array(
-                'title'       => _x( 'Example Section', 'Customizer Section', 'rvn' ),
                 'id'          => 'examplesection',
                 'panel'       => 'examplepanel',
+                'title'       => _x( 'Example Section', 'Customizer Section', 'rvn' ),
                 'description' => __( 'My example description.', 'rvn' ),
             ) );
 
-            parent::add_text_control( array(
-                'label'   => __( 'Example Text', 'rvn' ),
+            self::add_control( array(
+                'type'    => 'text',
                 'id'      => 'example_text',
+                'label'   => __( 'Example Text', 'rvn' ),
 //                'default' => 'My default example text',
             ) );
 
-            parent::add_textarea_control( array(
-                'label'   => __( 'Example Textarea', 'rvn' ),
-                'id'      => 'example_textarea',
+            self::add_control( array(
+                'type'  => 'textarea',
+                'id'    => 'example_textarea',
+                'label' => __( 'Example Textarea', 'rvn' ),
             ) );
 
-            self::add_checkbox_control( array(
-                'label'   => __( 'Example Checkbox', 'rvn' ),
+            self::add_control( array(
+                'type'    => 'checkbox',
                 'id'      => 'example_checkbox',
+                'label'   => __( 'Example Checkbox', 'rvn' ),
 //                'default' => true,
             ) );
 
-            self::add_select_control( array(
-                'label'   => __( 'Example Select', 'rvn' ),
+            self::add_control( array(
+                'type'    => 'select',
                 'id'      => 'example_select',
+                'label'   => __( 'Example Select', 'rvn' ),
                 'choices' => array(
                     'choice1' => __( 'Choice 1', 'rvn' ),
                     'choice2' => __( 'Choice 2', 'rvn' ),
@@ -78,32 +82,37 @@ if ( ! class_exists( 'RVN_Customizer_Controls' ) ) :
 //                'default' => '',
             ) );
 
-            self::add_color_control( array(
-                'label'     => __( 'Example Color', 'rvn' ),
+            self::add_control( array(
+                'type'      => 'color',
                 'id'        => 'example_color',
+                'label'     => __( 'Example Color', 'rvn' ),
                 'default'   => '#555555',
                 'transport' => 'postMessage', // Live-update
             ) );
 
-            parent::add_file_control( array(
-                'label' => __( 'Example File', 'rvn' ),
+            self::add_control( array(
+                'type'  => 'file',
                 'id'    => 'example_file',
+                'label' => __( 'Example File', 'rvn' ),
             ) );
 
-            parent::add_media_control( array(
-                'label'     => __( 'Example Media', 'rvn' ),
+            self::add_control( array(
+                'type'      => 'media',
                 'id'        => 'example_media',
 //                'mime_type' => 'audio',
+                'label'     => __( 'Example Media', 'rvn' ),
             ) );
 
-            parent::add_image_control( array(
-                'label' => __( 'Example Image', 'rvn' ),
+            self::add_control( array(
+                'type'  => 'image',
                 'id'    => 'example_image',
+                'label' => __( 'Example Image', 'rvn' ),
             ) );
 
-            parent::add_cropped_image_control( array(
-                'label'       => __( 'Example Cropped Image', 'rvn' ),
+            self::add_control( array(
+                'type'        => 'cropped_image',
                 'id'          => 'example_cropped_image',
+                'label'       => __( 'Example Cropped Image', 'rvn' ),
                 'flex_width'  => false,
                 'flex_height' => false,
                 'width'       => 500,
