@@ -6,32 +6,25 @@
  */
 ?>
 
-    </div><!-- /c-body -->
+        </div><!-- /c-body -->
 
-    <footer class="c-footer">
-        <div class="o-container">
+        <footer class="c-footer">
+            <div class="o-container">
 
-            <?php if ( has_nav_menu( 'footer' ) ) : ?>
                 <nav class="c-footer__nav">
-                    <?php
-                    wp_nav_menu( array(
-                        'theme_location' => 'footer',
-                        'depth'          => 1,
-                    ) );
-                    ?>
+                    <?php rvn_put_footer_nav(); ?>
                 </nav><!-- /c-footer__nav -->
-            <?php endif; ?>
 
-        </div><!-- /o-container -->
-    </footer><!-- /c-footer -->
+            </div><!-- /o-container -->
+        </footer><!-- /c-footer -->
 
-    <?php do_action( 'rvn_before_site_end' ); ?>
+        <?php do_action( 'rvn_before_site_end' ); ?>
 
-</div><!-- /c-site -->
+    </div><!-- /c-site -->
 
-<?php do_action( 'rvn_after_site_end' ); ?>
+    <?php do_action( 'rvn_after_site_end' ); ?>
 
-<?php wp_footer(); ?>
+    <?php wp_footer(); ?>
 
 </body>
 

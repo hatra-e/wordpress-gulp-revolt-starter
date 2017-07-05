@@ -48,6 +48,6 @@ require_once( 'functions/conditionals.php' );
 require_once( 'functions/content-modifiers.php' );
 require_once( 'functions/enqueues.php' );
 require_once( 'functions/entry.php' );
-require_once( 'functions/navbar.php' );
+require_once( 'functions/nav-menus.php' );
 require_once( 'functions/page.php' );
 require_once( 'functions/pagination.php' );
