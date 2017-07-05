@@ -10,30 +10,28 @@
 
 <?php get_header(); ?>
 
-<div class="o-container">
-
     <main class="c-main">
+        <div class="o-container">
 
-        <?php if ( have_posts() ) : ?>
+            <?php if ( have_posts() ) : ?>
 
-            <?php while( have_posts() ) : the_post(); ?>
+                <?php while( have_posts() ) : the_post(); ?>
 
-                <?php get_template_part( 'components/entry', get_post_format() ); ?>
+                    <?php get_template_part( 'components/entry', get_post_format() ); ?>
 
-            <?php endwhile; ?>
+                <?php endwhile; ?>
 
-            <?php rvn_put_paginator(); ?>
+                <?php rvn_put_paginator(); ?>
 
-        <?php else : ?>
+            <?php else : ?>
 
-            <?php get_template_part( 'components/entry', 'none' ); ?>
+                <?php get_template_part( 'components/entry', 'none' ); ?>
 
-        <?php endif; ?>
+            <?php endif; ?>
 
+        </div><!-- /o-container -->
     </main><!-- /c-main -->
 
     <?php get_sidebar(); ?>
-
-</div><!-- /o-container -->
 
 <?php get_footer(); ?>

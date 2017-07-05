@@ -6,14 +6,12 @@
 
 <?php get_header(); ?>
 
-<div class="o-container">
-
     <main class="c-main c-main--full-width">
+        <div class="o-container">
 
-        <?php get_template_part( 'components/entry', '404' ); ?>
+            <?php get_template_part( 'components/entry', '404' ); ?>
 
+        </div><!-- /o-container -->
     </main><!-- /c-main -->
-
-</div><!-- /o-container -->
 
 <?php get_footer(); ?>

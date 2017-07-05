@@ -16,8 +16,8 @@ $description = $page_header['description'];
 
 <?php if ( ! empty ( $title ) ): ?>
 
-    <div class="o-container">
-        <header class="c-page-header">
+    <header class="c-page-header">
+        <div class="o-container">
             <h1 class="c-page-header__title">
                 <?php
                 echo $title;
@@ -28,7 +28,7 @@ $description = $page_header['description'];
                     <?php echo $description; ?>
                 </p>
             <?php endif; ?>
-        </header>
-    </div><!-- /o-container -->
+        </div><!-- /o-container -->
+    </header>
 
 <?php endif; ?>
