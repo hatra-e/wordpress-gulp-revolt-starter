@@ -6,6 +6,7 @@
  */
 ?>
 
+            </div><!-- /o-body -->
         </div><!-- /c-body -->
 
         <footer class="c-footer">
