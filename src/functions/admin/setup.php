@@ -64,16 +64,16 @@ if ( ! function_exists( 'rvn_theme_setup' ) ) :
         // Adds support for a variety of post formats.
         //
 
-        add_theme_support( 'post-formats', array(
-            'aside',
-            'gallery',
-            'image',
-            'video',
-            'audio',
-            'link',
-            'quote',
-            'status',
-        ) );
+//        add_theme_support( 'post-formats', array(
+//            'aside',
+//            'gallery',
+//            'image',
+//            'video',
+//            'audio',
+//            'link',
+//            'quote',
+//            'status',
+//        ) );
 
 
         //
