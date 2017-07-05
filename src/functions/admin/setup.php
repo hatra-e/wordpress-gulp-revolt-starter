@@ -112,10 +112,10 @@ if ( ! function_exists( 'rvn_theme_setup' ) ) :
         //
 
         add_theme_support( 'custom-logo', array(
-            'height'      => 150,
-            'width'       => 400,
-//            'flex-width'  => true,
-//            'flex-height' => true,
+//            'height'      => 150,
+//            'width'       => 400,
+            'flex-width'  => true,
+            'flex-height' => true,
         ) );
 
 
