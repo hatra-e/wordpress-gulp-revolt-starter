@@ -16,7 +16,7 @@ if ( ! function_exists( 'rvn_put_primary_nav' ) ) :
         // Output primary nav if assigned.
         if ( has_nav_menu( 'primary' ) ) {
             wp_nav_menu( array(
-                'theme_location' => 'primary',
+                'theme_location' => 'main',
                 'depth'          => 3,
                 'container'      => false,
                 'menu_class'     => '',

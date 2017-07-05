@@ -83,8 +83,8 @@ if ( ! function_exists( 'rvn_theme_setup' ) ) :
         //
 
         register_nav_menus( array(
-            'primary' => __( 'Primary Menu', 'rvn' ),
-            'footer'  => __( 'Footer Menu', 'rvn' ),
+            'main'   => __( 'Main Menu', 'rvn' ),
+            'footer' => __( 'Footer Menu', 'rvn' ),
         ) );
 
 
