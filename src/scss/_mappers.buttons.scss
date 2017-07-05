@@ -1,0 +1,11 @@
+//
+// MAPPERS.BUTTONS
+//
+
+
+
+button:not(.c-button),
+input[type=submit]:not(.c-button) {
+    @extend %c-button;
+    @extend %c-button--primary;
+}

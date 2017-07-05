@@ -105,7 +105,10 @@ $revo-figure-figcation-bg:            $muted-bg;
 ////////////////////////////////////////////////////////////////////////////////
 
 @import "../../bower_components/revolt.components.buttons/components.buttons";
+@import "mappers.buttons";
+
 @import "../../bower_components/revolt.components.forms/components.forms";
+@import "mappers.forms";
 
 
 
