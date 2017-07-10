@@ -101,3 +101,33 @@ if ( ! function_exists( 'rvn_modify_gallery_atts' ) ):
 
     add_filter( 'shortcode_atts_gallery', 'rvn_modify_gallery_atts' );
 endif;
+
+
+
+if ( ! function_exists( 'rvn_modify_attachment_link_image_size' ) ):
+    /**
+     * Modify attachment link
+     *
+     * Link to 'large' instead of 'full' image size.
+     *
+     * @wp-hook wp_get_attachment_link
+     * @param string $link
+     * @param int $post_id
+     * @param array $size
+     * @param bool $permalink
+     * @return string $modified_link
+     * @since 1.0.0
+     */
+    function rvn_modify_attachment_link_image_size( $link, $post_id, $size, $permalink )
+    {
+        // Only do this if we're getting the file URL
+        if ( ! $permalink ) {
+            // This returns an array of url, width, height
+            $image = wp_get_attachment_image_src( $post_id, 'large' );
+            $modified_link = preg_replace( '/href=\'(.*?)\'/', 'href=\'' . $image[0] . '\'', $link );
+            return $modified_link;
+        }
+    }
+
+    add_filter( 'wp_get_attachment_link', 'rvn_modify_attachment_link_image_size', 10, 4 );
+endif;
