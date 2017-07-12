@@ -18,10 +18,10 @@
 
                 <?php endwhile; ?>
 
-                <?php get_sidebar(); ?>
-
             </div><!-- /o-container -->
         </main><!-- /c-main -->
     </div><!-- /o-body__main -->
+
+    <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
