@@ -4,7 +4,7 @@
  */
 ?>
 
-<nav class="c-navbar" role="navigation">
+<nav class="c-navbar">
 
     <?php rvn_put_main_nav(); ?>
 
