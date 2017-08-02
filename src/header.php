@@ -41,5 +41,5 @@
         </header><!-- /c-masthead -->
 
         <div class="c-body">
+            <?php get_template_part( 'components/page-header' ); ?>
             <div class="o-body">
-                <?php get_template_part( 'components/page-header' ); ?>
