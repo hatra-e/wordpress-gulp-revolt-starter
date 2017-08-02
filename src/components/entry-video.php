@@ -8,9 +8,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <div class="c-entry__featured">
-        <?php echo rvn_get_featured_video(); ?>
-    </div><!-- /c-entry__featured -->
+    <?php echo rvn_conditional_tag( '<div class="c-entry__featured">', rvn_get_featured_video(), '</div>' ); ?>
 
     <header class="c-entry__header">
         <?php get_template_part( 'components/_entry', 'title' ); ?>

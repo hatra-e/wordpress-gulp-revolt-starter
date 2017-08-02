@@ -14,9 +14,7 @@ $source_name = get_post_meta( get_the_ID(), '_rtpfui_quote_source_name', true );
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <div class="c-entry__featured">
-        <?php echo rvn_get_featured_image(); ?>
-    </div><!-- /c-entry__featured -->
+    <?php echo rvn_conditional_tag( '<div class="c-entry__featured">', rvn_get_featured_image(), '</div>' ); ?>
 
     <header class="c-entry__header">
 
