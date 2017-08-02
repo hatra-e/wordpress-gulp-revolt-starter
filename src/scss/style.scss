@@ -109,6 +109,21 @@ $revo-figure-figcation-bg:            $muted-bg;
 // Components
 ////////////////////////////////////////////////////////////////////////////////
 
+$revo-button-padding-y:                     .8rem;
+$revo-button-padding-x:                     1.4rem;
+$revo-button-border-radius:                 $border-radius;
+$revo-button-padding-y--small:              .5rem;
+$revo-button-padding-x--small:              1rem;
+$revo-button-border-radius--small:          $border-radius;
+$revo-button-padding-y--large:              1rem;
+$revo-button-padding-x--large:              1.6rem;
+$revo-button-border-radius--large:          $border-radius;
+$revo-button-primary-color:                 white;
+$revo-button-primary-bg:                    $accent-color;
+$revo-button-primary-border:                $accent-color;
+$revo-button-link-color:                    $link-color;
+$revo-button-link-disabled-color:           lighten($link-color, 35%);
+$revo-button-link-hover-color:              darken($link-color, 10%);
 @import "../../bower_components/revolt.components.buttons/components.buttons";
 @import "mappers.buttons";
 
