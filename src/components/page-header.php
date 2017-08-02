@@ -19,9 +19,7 @@ $description = $page_header['description'];
     <header class="c-page-header">
         <div class="o-container">
             <h1 class="c-page-header__title">
-                <?php
-                echo $title;
-                ?>
+                <?php echo $title; ?>
             </h1>
             <?php if ( ! empty( $description ) ) : ?>
                 <p class="c-page-header__description">
