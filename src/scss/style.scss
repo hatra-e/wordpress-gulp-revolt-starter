@@ -14,8 +14,6 @@ Text Domain: rvn
 // Settings
 ////////////////////////////////////////////////////////////////////////////////
 
-$muted-bg:    #ddd;
-
 $font-family:          'Lato', sans-serif;
 $font-weight:          400;
 $font-weight--bold:    700;
@@ -31,6 +29,13 @@ $base-line-height:     1.6;
 $base-color:           #333;
 $base-bg:              #fff;
 $base-border-color:    #ccc;
+
+$accent-color:    red;
+$link-color:      $accent-color;
+$muted-color:     lighten($base-color, 30%);
+$muted-bg:        #eee;
+
+$border-radius: 6px;
 
 $revo-root-font-size:       $base-font-size;
 $revo-base-line-height:     $base-line-height;
