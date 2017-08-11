@@ -18,11 +18,11 @@ $font-family:          'Lato', sans-serif;
 $font-weight:          400;
 $font-weight--bold:    700;
 
-$secondary-font-family:    'Montserrat', sans-serif;
-$font-weight:              400;
-$font-weight--light:       300;
-$font-weight--medium:      500;
-$font-weight--bold:        700;
+$secondary-font-family:            'Montserrat', sans-serif;
+$secondary-font-weight:            400;
+$secondary-font-weight--light:     300;
+$secondary-font-weight--medium:    500;
+$secondary-font-weight--bold:      700;
 
 $base-font-size:       16px;
 $base-line-height:     1.6;
@@ -35,7 +35,7 @@ $link-color:      $accent-color;
 $muted-color:     lighten($base-color, 30%);
 $muted-bg:        #eee;
 
-$border-radius: 6px;
+$border-radius:    6px;
 
 $revo-root-font-size:       $base-font-size;
 $revo-base-line-height:     $base-line-height;
