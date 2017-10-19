@@ -126,9 +126,9 @@ if ( ! function_exists( 'rvn_get_featured_image' ) ) :
      *
      * @since 1.0.0
      */
-    function rvn_get_featured_image()
+    function rvn_get_featured_image( $size = 'post-thumbnail' )
     {
-        $image = get_the_post_thumbnail( null, 'post-thumbnail' );
+        $image = get_the_post_thumbnail( null, $size );
 
         if ( is_singular() ) {
             return $image;
