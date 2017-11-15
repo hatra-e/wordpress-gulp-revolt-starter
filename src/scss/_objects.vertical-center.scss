@@ -1,0 +1,15 @@
+//
+// OBJECTS.VERTICAL-CENTER
+//
+
+
+
+.o-vertical-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.o-vertical-center__inner {
+    width: 100%;
+}
