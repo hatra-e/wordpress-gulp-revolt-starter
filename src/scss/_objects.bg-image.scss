@@ -1,0 +1,25 @@
+//
+// OBJECTS.BG-IMAGE
+//
+
+
+
+.o-bg-image {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+}
+
+.o-bg-image--top-left      { background-position: top left; }
+.o-bg-image--top-center    { background-position: top center; }
+.o-bg-image--top-right     { background-position: top right; }
+.o-bg-image--center-left   { background-position: center left; }
+.o-bg-image--center-center { background-position: center center; }
+.o-bg-image--center-right  { background-position: center right; }
+.o-bg-image--bottom-left   { background-position: bottom left; }
+.o-bg-image--bottom-center { background-position: bottom center; }
+.o-bg-image--bottom-right  { background-position: bottom right; }
+
+.o-bg-image--cover {
+    background-size: cover;
+}
