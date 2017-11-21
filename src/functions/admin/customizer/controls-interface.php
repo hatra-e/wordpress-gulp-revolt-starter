@@ -47,7 +47,7 @@ if ( ! class_exists( 'RVN_Customizer_Controls_Interface' ) ) :
          * @return int
          * @since 1.0.0
          */
-        public static function priority( $step = 10 )
+        public static function priority( $step = 1 )
         {
             self::$current_priority += $step;
             return self::$current_priority;
