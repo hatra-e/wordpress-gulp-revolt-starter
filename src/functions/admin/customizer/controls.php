@@ -83,6 +83,12 @@ if ( ! class_exists( 'RVN_Customizer_Controls' ) ) :
             ) );
 
             self::add_control( array(
+                'type'    => 'dropdown-pages',
+                'id'      => 'example_link',
+                'label'   => __( 'Example Link', 'rvn' ),
+            ) );
+
+            self::add_control( array(
                 'type'      => 'color',
                 'id'        => 'example_color',
                 'label'     => __( 'Example Color', 'rvn' ),
