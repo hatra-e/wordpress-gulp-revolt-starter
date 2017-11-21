@@ -25,6 +25,7 @@ $secondary-font-weight--medium:    500;
 $secondary-font-weight--bold:      700;
 
 $base-font-size:       16px;
+$mobile-font-size:     14px;
 $base-line-height:     1.6;
 $base-color:           #333;
 $base-bg:              #fff;
@@ -90,6 +91,7 @@ $revo-figure-figcation-bg:            $muted-bg;
 @import "../../bower_components/revolt.base.lists/base.lists";
 @import "../../bower_components/revolt.base.responsive-images/base.responsive-images";
 
+@import "base.root";
 @import "base.headings";
 //@import "base.responsive-media";
 
