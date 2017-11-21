@@ -21,6 +21,8 @@
 
 <body <?php body_class('js-off'); ?>>
 
+    <?php get_template_part( 'components/header', 'svg' ); ?>
+
     <?php do_action( 'rvn_before_site_begin' ); ?>
 
     <div class="c-site">
