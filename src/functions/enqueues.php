@@ -29,6 +29,15 @@ if ( ! function_exists( 'rvn_enqueue_scripts' ) ) :
             RVN_THEME_VERSION
         );
 
+        // Enqueue matchHeight.js
+        wp_enqueue_script(
+            'rvn_match-height',
+            RVN_TEMPLATE_URL . '/plugins/match-height/jquery.matchHeight.js',
+            array( 'jquery', 'rvn_main' ),
+            RVN_THEME_VERSION,
+            true
+        );
+
         // Enqueue FitVids.js
         wp_enqueue_script(
             'rvn_fitvids',

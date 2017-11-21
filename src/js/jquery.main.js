@@ -8,6 +8,7 @@ jQuery(document).ready(function ($) {
      ============================================================ */
 
     setup_fitvids();
+    setup_match_height();
 
 
     /* After site is loaded...
@@ -16,6 +17,24 @@ jQuery(document).ready(function ($) {
     $(window).load(function () {
         setup_flex_slider();
     });
+
+
+    /* Match Height
+     ============================================================ */
+
+    function setup_match_height()
+    {
+        if ($.isFunction(jQuery.fn.matchHeight)) {
+            $('.js-match-height').matchHeight();
+            $('.js-match-height-1').matchHeight();
+            $('.js-match-height-2').matchHeight();
+            $('.js-match-height-3').matchHeight();
+            $('.js-match-height-no-row').matchHeight({ byRow: false });
+            $('.js-match-height-no-row-1').matchHeight({ byRow: false });
+            $('.js-match-height-no-row-2').matchHeight({ byRow: false });
+            $('.js-match-height-no-row-3').matchHeight({ byRow: false });
+        }
+    }
 
 
     /* Flex Slider
