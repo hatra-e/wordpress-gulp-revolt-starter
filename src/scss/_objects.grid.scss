@@ -1,0 +1,49 @@
+//
+// OBJECTS.GRID
+//
+
+
+
+.o-grid--centered {
+    justify-content: center;
+}
+
+.o-grid--no-gutter {
+    margin-right: 0;
+    margin-bottom: 0;
+
+    [class*="#{$revo-grid-namespace}grid__col"] {
+        padding-right: 0;
+        margin-bottom: 0;
+    }
+}
+
+.o-grid--gutter-sm {
+    margin-right: -(spacer-x(1) * .5);
+    margin-bottom: -(spacer-y(1) * .5);
+
+    [class*="#{$revo-grid-namespace}grid__col"] {
+        padding-right: (spacer-x(1) * .5);
+        margin-bottom: (spacer-y(1) * .5);
+    }
+}
+
+.o-grid--gutter-lg {
+    margin-right: -(spacer-x(2));
+    margin-bottom: -(spacer-y(2));
+
+    [class*="#{$revo-grid-namespace}grid__col"] {
+        padding-right: spacer-x(2);
+        margin-bottom: spacer-y(2);
+    }
+}
+
+.o-grid--gutter-xl {
+    margin-right: -(spacer-x(3));
+    margin-bottom: -(spacer-y(3));
+
+    [class*="#{$revo-grid-namespace}grid__col"] {
+        padding-right: spacer-x(3);
+        margin-bottom: spacer-y(3);
+    }
+}
