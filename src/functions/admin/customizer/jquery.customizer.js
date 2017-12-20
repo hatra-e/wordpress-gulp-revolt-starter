@@ -1,6 +1,6 @@
 /**
- * In this file, you can enhance the customizer directly with javascript.
- * This is especially great if you have custom controls that need javascript to
+ * In this file, you can enhance the customizer directly with JavaScript.
+ * This is especially great if you have custom controls that need JavaScript to
  * work.
  */
 
