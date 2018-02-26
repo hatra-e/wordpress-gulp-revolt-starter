@@ -75,7 +75,13 @@ body,
     @include clearfix;
     margin: 0 auto;
     max-width: 1200px;
-    padding: 0 3rem;
+    padding-left: spacer-x(layout-1);
+    padding-right: spacer-x(layout-1);
+
+    @include media-breakpoint-up(lg) {
+        padding-left: spacer-x(layout-2);
+        padding-right: spacer-x(layout-2);
+    }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -83,7 +89,15 @@ body,
 // OBJECTS.SECTION
 //
 
-.o-section {}
+.o-section {
+    padding-top: spacer-y(layout-1);
+    padding-bottom: spacer-y(layout-1);
+
+    @include media-breakpoint-up(lg) {
+        padding-top: spacer-y(layout-2);
+        padding-bottom: spacer-y(layout-2);
+    }
+}
 
 ////////////////////////////////////////////////////////////////////////////////
 //
