@@ -45,6 +45,40 @@ $revo-base-bg:              $base-bg;
 $revo-base-border-color:    $base-border-color;
 @import "../../bower_components/revolt.settings.defaults/settings.defaults";
 
+$revo-spacers: (
+    0: (
+        x: 0,
+        y: 0
+    ),
+    1: (
+        x: $revo-spacer-x,
+        y: $revo-spacer-y
+    ),
+    2: (
+        x: ($revo-spacer-x * 1.5),
+        y: ($revo-spacer-y * 1.5)
+    ),
+    3: (
+        x: ($revo-spacer-x * 3),
+        y: ($revo-spacer-y * 3)
+    ),
+    text-1: (
+        x: .3rem,
+        y: .3rem
+    ),
+    text-2: (
+        x: .5rem,
+        y: .5rem
+    ),
+    layout-1: (
+        x: 1.5rem,
+        y: 1.5rem
+    ),
+    layout-2: (
+        x: 3rem,
+        y: 3rem
+    )
+);
 @import "../../bower_components/revolt.settings.spacing/settings.spacing";
 @import "../../bower_components/revolt.settings.responsive/settings.responsive";
 
