@@ -7,6 +7,7 @@ jQuery(document).ready(function ($) {
     /* When DOM is ready...
     ========================================================================= */
 
+    setup_mobile_menu();
     setup_fitvids();
     setup_match_height();
 
@@ -17,6 +18,24 @@ jQuery(document).ready(function ($) {
     $(window).load(function () {
         setup_flex_slider();
     });
+
+
+    /* Mobile Menu
+     ========================================================================= */
+
+    function setup_mobile_menu() {
+        var $menu_button = $('.js-hamburger');
+        var $menu        = $('.js-mobile-navbar');
+
+        $menu.hide();
+
+        $menu_button.click(function() {
+            $(this).toggleClass('is-active');
+            $menu.slideToggle( "slow", function() {
+                // Animation complete.
+            });
+        });
+    }
 
 
     /* Match Height

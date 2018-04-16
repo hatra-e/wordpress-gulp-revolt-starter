@@ -39,8 +39,11 @@
             <div class="o-container">
                 <?php get_template_part( 'components/header', 'brand' ); ?>
                 <?php get_template_part( 'components/header', 'navbar' ); ?>
+                <?php get_template_part( 'components/header', 'hamburger' ); ?>
             </div><!-- /o-container -->
         </header><!-- /c-masthead -->
+
+        <?php get_template_part( 'components/header', 'mobile-navbar' ); ?>
 
         <div class="c-body">
             <?php get_template_part( 'components/page-header' ); ?>
