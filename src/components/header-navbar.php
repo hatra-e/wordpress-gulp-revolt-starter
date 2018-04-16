@@ -6,6 +6,6 @@
 
 <nav class="c-navbar">
 
-    <?php rvn_put_main_nav(); ?>
+    <?php rvn_put_nav(); ?>
 
 </nav>

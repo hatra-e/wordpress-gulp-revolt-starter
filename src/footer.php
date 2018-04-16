@@ -13,7 +13,14 @@
             <div class="o-container">
 
                 <nav class="c-footer__nav">
-                    <?php rvn_put_footer_nav(); ?>
+                    <?php
+                    rvn_put_nav( array(
+                        'theme_location' => 'footer',
+                        'depth'          => 1,
+                        'container'      => false,
+                        'menu_class'     => '',
+                    ) );
+                    ?>
                 </nav><!-- /c-footer__nav -->
 
             </div><!-- /o-container -->
