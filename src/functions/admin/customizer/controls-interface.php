@@ -36,7 +36,7 @@ if ( ! class_exists( 'RVN_Customizer_Controls_Interface' ) ) :
          *
          * @var string
          */
-        public static $current_priority = 99;
+        public static $current_priority = 999;
 
 
 
