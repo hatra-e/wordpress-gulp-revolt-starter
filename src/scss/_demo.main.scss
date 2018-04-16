@@ -34,37 +34,6 @@ body,
     border-top: 3px solid gray;
 }
 
-////////////////////////////////////////////////////////////////////////////////
-//
-// OBJECTS.BODY
-//
-
-.o-body {
-
-    @include media-breakpoint-up(lg) {
-        display: flex;
-    }
-}
-
-.o-body__main {
-
-    @include media-breakpoint-up(lg) {
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: auto;
-    }
-}
-
-.o-body__sidebar {
-    display: none;
-
-    @include media-breakpoint-up(lg) {
-        display: block;
-        flex-grow: 0; /* do not grow   - initial value: 0 */
-        flex-shrink: 0; /* do not shrink - initial value: 1 */
-        flex-basis: 400px; /* width/height  - initial value: auto */
-    }
-}
 
 ////////////////////////////////////////////////////////////////////////////////
 //

@@ -142,6 +142,10 @@ $revo-figure-figcation-bg:            $muted-bg;
 @import "../../bower_components/revolt.objects.media/objects.media";
 
 @import "objects.bg-image";
+
+$revo-body-sidebar-width: 400px !default;
+@import "objects.body";
+
 @import "objects.grid";
 @import "objects.vertical-center";
 
