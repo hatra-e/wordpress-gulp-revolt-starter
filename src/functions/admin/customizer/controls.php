@@ -25,17 +25,17 @@ if ( ! class_exists( 'RVN_Customizer_Controls' ) ) :
         {
             self::$wp_customize = $wp_customize;
 
-            self::register_example_controls();
+            self::register_example_section();
         }
 
 
 
         /**
-         * Register Example Controls
+         * Register Example Section
          *
          * @since 1.0.0
          */
-        public static function register_example_controls()
+        public static function register_example_section()
         {
             self::add_panel( array(
                 'id'    => 'examplepanel',
@@ -50,29 +50,29 @@ if ( ! class_exists( 'RVN_Customizer_Controls' ) ) :
             ) );
 
             self::add_control( array(
-                'type'    => 'text',
                 'id'      => 'example_text',
                 'label'   => __( 'Example Text', 'rvn' ),
+                'type'    => 'text',
 //                'default' => 'My default example text',
             ) );
 
             self::add_control( array(
-                'type'  => 'textarea',
                 'id'    => 'example_textarea',
                 'label' => __( 'Example Textarea', 'rvn' ),
+                'type'  => 'textarea',
             ) );
 
             self::add_control( array(
-                'type'    => 'checkbox',
                 'id'      => 'example_checkbox',
                 'label'   => __( 'Example Checkbox', 'rvn' ),
+                'type'    => 'checkbox',
 //                'default' => true,
             ) );
 
             self::add_control( array(
-                'type'    => 'select',
                 'id'      => 'example_select',
                 'label'   => __( 'Example Select', 'rvn' ),
+                'type'    => 'select',
                 'choices' => array(
                     'choice1' => __( 'Choice 1', 'rvn' ),
                     'choice2' => __( 'Choice 2', 'rvn' ),
@@ -83,42 +83,42 @@ if ( ! class_exists( 'RVN_Customizer_Controls' ) ) :
             ) );
 
             self::add_control( array(
-                'type'    => 'dropdown-pages',
                 'id'      => 'example_link',
                 'label'   => __( 'Example Link', 'rvn' ),
+                'type'    => 'dropdown-pages',
             ) );
 
             self::add_control( array(
-                'type'      => 'color',
                 'id'        => 'example_color',
                 'label'     => __( 'Example Color', 'rvn' ),
+                'type'      => 'color',
                 'default'   => '#555555',
                 'transport' => 'postMessage', // Live-update
             ) );
 
             self::add_control( array(
-                'type'  => 'file',
                 'id'    => 'example_file',
                 'label' => __( 'Example File', 'rvn' ),
+                'type'  => 'file',
             ) );
 
             self::add_control( array(
-                'type'      => 'media',
                 'id'        => 'example_media',
-//                'mime_type' => 'audio',
                 'label'     => __( 'Example Media', 'rvn' ),
+                'type'      => 'media',
+//                'mime_type' => 'audio',
             ) );
 
             self::add_control( array(
-                'type'  => 'image',
                 'id'    => 'example_image',
                 'label' => __( 'Example Image', 'rvn' ),
+                'type'  => 'image',
             ) );
 
             self::add_control( array(
-                'type'        => 'cropped_image',
                 'id'          => 'example_cropped_image',
                 'label'       => __( 'Example Cropped Image', 'rvn' ),
+                'type'        => 'cropped_image',
                 'flex_width'  => false,
                 'flex_height' => false,
                 'width'       => 500,
