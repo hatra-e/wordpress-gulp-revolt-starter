@@ -70,6 +70,10 @@ $revo-spacers: (
         x: .5rem,
         y: .5rem
     ),
+    text-3: (
+        x: 1rem,
+        y: 1rem
+    ),
     layout-1: (
         x: 1.5rem,
         y: 1.5rem
@@ -77,6 +81,10 @@ $revo-spacers: (
     layout-2: (
         x: 3rem,
         y: 3rem
+    ),
+    layout-3: (
+        x: 5rem,
+        y: 5rem
     )
 );
 @import "../../bower_components/revolt.settings.spacing/settings.spacing";
