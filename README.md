@@ -32,7 +32,7 @@ Create `gulpenv.js`:
 1. Copy `gulpenv.example.js` and name it `gulpenv.js` (don't delete `gulpenv.example.js`).
 1. To get BrowserSync to work, change the proxy address to your own in `gulpenv.js`.
 
-`gulpenv.js` will be ignored by Git, so other people working on the project can create their own set their own `gulpenv.js` file and set their proxy address.
+`gulpenv.js` will be ignored by Git, so other people working on the project can create their own `gulpenv.js` file and set their proxy address.
 
 ## Usage
 
