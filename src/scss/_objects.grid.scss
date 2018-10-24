@@ -8,42 +8,16 @@
     justify-content: center;
 }
 
-.o-grid--no-gutter {
-    margin-right: 0;
-    margin-bottom: 0;
+@each $spacer-name, $spacer-sizes in $revo-spacers {
 
-    [class*="#{$revo-grid-namespace}grid__col"] {
-        padding-right: 0;
-        margin-bottom: 0;
+    .o-grid--gutter-#{$spacer-name} {
+        margin-right: -(spacer-x($spacer-name));
+        margin-bottom: -(spacer-y($spacer-name));
+
+        [class*="#{$revo-grid-namespace}grid__col"] {
+            padding-right: spacer-x($spacer-name);
+            margin-bottom: spacer-y($spacer-name);
+        }
     }
-}
 
-.o-grid--gutter-sm {
-    margin-right: -(spacer-x(1) * .5);
-    margin-bottom: -(spacer-y(1) * .5);
-
-    [class*="#{$revo-grid-namespace}grid__col"] {
-        padding-right: (spacer-x(1) * .5);
-        margin-bottom: (spacer-y(1) * .5);
-    }
-}
-
-.o-grid--gutter-lg {
-    margin-right: -(spacer-x(2));
-    margin-bottom: -(spacer-y(2));
-
-    [class*="#{$revo-grid-namespace}grid__col"] {
-        padding-right: spacer-x(2);
-        margin-bottom: spacer-y(2);
-    }
-}
-
-.o-grid--gutter-xl {
-    margin-right: -(spacer-x(3));
-    margin-bottom: -(spacer-y(3));
-
-    [class*="#{$revo-grid-namespace}grid__col"] {
-        padding-right: spacer-x(3);
-        margin-bottom: spacer-y(3);
-    }
 }

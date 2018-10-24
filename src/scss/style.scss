@@ -43,49 +43,18 @@ $revo-base-line-height:     $base-line-height;
 $revo-base-color:           $base-color;
 $revo-base-bg:              $base-bg;
 $revo-base-border-color:    $base-border-color;
+$revo-spacer:      9px;
+$revo-spacer-x:    $revo-spacer;
+$revo-spacer-y:    $revo-spacer;
 @import "../../bower_components/revolt.settings.defaults/settings.defaults";
 
 $revo-spacers: (
-    0: (
-        x: 0,
-        y: 0
-    ),
-    1: (
-        x: $revo-spacer-x,
-        y: $revo-spacer-y
-    ),
-    2: (
-        x: ($revo-spacer-x * 1.5),
-        y: ($revo-spacer-y * 1.5)
-    ),
-    3: (
-        x: ($revo-spacer-x * 3),
-        y: ($revo-spacer-y * 3)
-    ),
-    text-1: (
-        x: .3rem,
-        y: .3rem
-    ),
-    text-2: (
-        x: .5rem,
-        y: .5rem
-    ),
-    text-3: (
-        x: 1rem,
-        y: 1rem
-    ),
-    layout-1: (
-        x: 1.5rem,
-        y: 1.5rem
-    ),
-    layout-2: (
-        x: 3rem,
-        y: 3rem
-    ),
-    layout-3: (
-        x: 5rem,
-        y: 5rem
-    )
+    none:   ( x: 0,                    y: 0                    ),
+    tiny:   ( x: ($revo-spacer *   1), y: ($revo-spacer *   1) ),
+    small:  ( x: ($revo-spacer *   2), y: ($revo-spacer *   2) ),
+    medium: ( x: ($revo-spacer *   4), y: ($revo-spacer *   4) ),
+    large:  ( x: ($revo-spacer *   8), y: ($revo-spacer *   8) ),
+    huge:   ( x: ($revo-spacer *  16), y: ($revo-spacer *  16) )
 );
 @import "../../bower_components/revolt.settings.spacing/settings.spacing";
 @import "../../bower_components/revolt.settings.responsive/settings.responsive";

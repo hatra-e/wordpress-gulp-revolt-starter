@@ -44,12 +44,12 @@ body,
     @include clearfix;
     margin: 0 auto;
     max-width: 1200px;
-    padding-left: spacer-x(layout-1);
-    padding-right: spacer-x(layout-1);
+    padding-left: spacer-x(tiny);
+    padding-right: spacer-x(tiny);
 
     @include media-breakpoint-up(lg) {
-        padding-left: spacer-x(layout-2);
-        padding-right: spacer-x(layout-2);
+        padding-left: spacer-x(small);
+        padding-right: spacer-x(small);
     }
 }
 
@@ -59,18 +59,17 @@ body,
 //
 
 .o-section {
-    padding-top: spacer-y(layout-2);
-    padding-bottom: spacer-y(layout-2);
+    padding-top: spacer-y(small);
+    padding-bottom: spacer-y(small);
 }
 
-.o-section--sm {
-    padding-top: spacer-y(layout-1);
-    padding-bottom: spacer-y(layout-1);
-}
+@each $spacer-name, $spacer-sizes in $revo-spacers {
 
-.o-section--lg {
-    padding-top: spacer-y(layout-3);
-    padding-bottom: spacer-y(layout-3);
+    .o-section--#{$spacer-name} {
+        padding-top: spacer-y($spacer-name);
+        padding-bottom: spacer-y($spacer-name);
+    }
+
 }
 
 ////////////////////////////////////////////////////////////////////////////////
