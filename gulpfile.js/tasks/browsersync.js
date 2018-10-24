@@ -1,4 +1,8 @@
-// ==== BROWSERSYNC ==== //
+//
+// GULP.BROWSERSYNC
+//
+
+
 
 var gulp        = require('gulp'),
     browsersync = require('browser-sync'),

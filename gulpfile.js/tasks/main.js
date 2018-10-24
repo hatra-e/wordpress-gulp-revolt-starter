@@ -1,31 +1,23 @@
-// ==== MAIN ==== //
+//
+// GULP.MAIN
+//
 
-var gulp        = require('gulp'),
-    plugins     = require('gulp-load-plugins')({ camelize: true }),
-    runSequence = require('run-sequence');
+
+
+var gulp    = require('gulp'),
+    plugins = require('gulp-load-plugins')({ camelize: true });
 
 // Default
 gulp.task('default', function(callback) {
-    runSequence(
-        'build',
+    plugins.sequence(
+        // Remove all files from build folder, to start with clean slate
+        'clean:files',
+        // Copy all files from src to build and compile Sass
+        ['files', 'sass'],
+        // Start BrowserSync
         'browsersync',
-        'watch',
+        // Start watching for file changes
+        ['watch:files', 'watch:sass'],
         callback
     );
 });
-
-// Auto-sync with server
-gulp.task('autosync', function(callback) {
-    runSequence(
-        'default',
-        'deploy-watch',
-        callback
-    );
-});
-
-// Build a working copy of the theme
-gulp.task('build', ['svg', 'images', 'scripts', 'styles', 'theme']);
-
-// Dist task chain: wipe -> build -> clean -> copy -> compress images
-// NOTE: this is a resource-intensive task!
-gulp.task('dist', ['images-optimize']);

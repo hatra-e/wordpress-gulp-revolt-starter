@@ -1,7 +1,7 @@
-jQuery('body').removeClass('js-off').addClass('js-on');
-
-
 jQuery(document).ready(function ($) {
+
+
+    $('body').removeClass('js-off').addClass('js-on');
 
 
     /* When DOM is ready...
